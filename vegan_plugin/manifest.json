@@ -1,0 +1,17 @@
+{
+  "name": "Random Vegan Comic",
+  "description": "Occasionally show a random vegansidekick.com image",
+  "version": "1.0",
+  "icons": { "16": "icon16.png",
+            "128": "icon128.png" },  
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-2.2.0.min.js", "random_vegan_script.js"]
+    }
+  ],
+  "manifest_version": 2
+}
